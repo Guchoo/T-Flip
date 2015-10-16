@@ -6,13 +6,14 @@ $icon-font-path: '../fonts/';
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #ccc;
+  background-color: #eee;
   color: #000;
   padding: 0.2em 0;
 }
 
 /* Space out content a bit */
 body {
+  background-color: #F4F4F6;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -90,4 +91,48 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.gadget-section {
+  padding-top: 10px;
+  >.row {
+    padding-bottom: 30px;
+  }
+}
+
+.gadget {
+  height: 350px;
+  padding-left: 20px;
+  background-color: white;
+  border: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid #dcdce0;
+  >.current-assignment {
+    margin-top: 45px;
+    >* {
+      float: left;
+      margin-right: 15px;
+    }
+    >.stat {
+      font-size: 20px;
+    }
+  }
+}
+
+.text-emph {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pie-chart {
+  width: 200px; height: 200px;
+  transform: rotate(-90deg);
+  background: yellowgreen;
+  border-radius: 50%;
+}
+
+.pie-circle {
+  stroke: yellowgreen;
+  fill: #655;
+  stroke-width: 32;
+  stroke-dasharray: 60 100; /* for 38% */
 }
