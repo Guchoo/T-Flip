@@ -1,0 +1,10 @@
+.asignlist {
+    font: 400 60px/1.5em sans-serif;
+    background-color: #eaeaea;
+}
+
+body {
+  background: #eaeaea;
+  font: 400 16px/1.5em sans-serif;
+  margin: 5;
+}
