@@ -1,3 +1,5 @@
+@import "app/styles/common.scss";
+
 .asignlist {
     font: 400 60px/1.5em sans-serif;
     margin-left: 5%
@@ -5,12 +7,6 @@
 
 .asignlist option{
   font: 400 30px/1.5em sans-serif;
-}
-
-
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .statuslist {
@@ -26,12 +22,4 @@ body {
   color: red;
 /*if passed
 color:green */
-}
-
-.feedback{
-
-}
-
-.description{
-
 }
