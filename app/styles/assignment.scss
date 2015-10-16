@@ -1,8 +1,8 @@
-@import "/styles/common.scss";
+@import "/styles/common.css";
 
 .asignlist {
-    font: 400 60px/1.5em sans-serif;
-    margin-left: 5%
+  font: 400 60px/1.5em sans-serif;
+  margin-left: 16px;
 }
 
 .asignlist option{
@@ -22,4 +22,8 @@
   color: red;
 /*if passed
 color:green */
+}
+
+.taskheader{
+  text-decoration: underline;
 }
