@@ -1,22 +1,31 @@
 <html>
   <head>
-    <link rel="stylesheet" href="css/assignment.css">
-    <select name ="Assignment" class="asignlist">
-      <option value ="assignment6">Assignment 6 </option>
-      <option value ="assignment5">Assignment 5 </option>
-      <option value ="assignment4">Assignment 4 </option>
-      <option value ="assignment3">Assignment 3 </option>
-      <option value ="assignment2">Assignment 2 </option>
-      <option value ="assignment1">Assignment 1 </option>
-    </select>
+    <link rel="stylesheet" href="styles/assignment.scss">
   </head>
-
+  
   <body>
-    <form>
+    <header>
+      <select name ="Assignment" class="asignlist">
+        <option value ="assignment6">Assignment 6 </option>
+        <option value ="assignment5">Assignment 5 </option>
+        <option value ="assignment4">Assignment 4 </option>
+        <option value ="assignment3">Assignment 3 </option>
+        <option value ="assignment2">Assignment 2 </option>
+        <option value ="assignment1">Assignment 1 </option>
+      </select>
+    </header>
+    <div class="statuslist">
       <label for="status">Status:</label>
-      <label for="currentstatus" color="red">Faild</label><br>
+      <label for="currentstatus" class="statuscolor">Faild</label><br><br>
       <lable for="closing">Closing in:</label>
       <label for="closingin">2 days</label>
-    </form>
+    </div>
+    <div class="statuslist">
+      <label for="complete">Completion:</label>
+      <label for="completepercent">60%</label><br><br>
+      <label for="lastbuild">Last Build:</label>
+      <label for="lastbuildtime">10 min.</label>
+    </div>
+
   </body>
 </html>

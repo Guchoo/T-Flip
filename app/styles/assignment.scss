@@ -1,15 +1,37 @@
 .asignlist {
     font: 400 60px/1.5em sans-serif;
-    background-color: #eaeaea;
+    margin-left: 5%
 }
 
 .asignlist option{
   font: 400 30px/1.5em sans-serif;
-  background-color: #eaeaea;
 }
 
+
 body {
-  background: #eaeaea;
-  font: 400 16px/1.5em sans-serif;
-  margin: 5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.statuslist {
+  margin-top: 40px;
+  margin-left: 20%;
+  font-size: 30px;
+  float: left;
+  width: 30%;
+}
+
+.statuscolor{
+/*if failed*/
+  color: red;
+/*if passed
+color:green */
+}
+
+.feedback{
+
+}
+
+.description{
+
 }
