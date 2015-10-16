@@ -1,0 +1,31 @@
+/* Space out content a bit */
+body {
+  background-color: #F4F4F6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.gadget-section {
+  padding-top: 10px;
+  >.row {
+    padding-bottom: 30px;
+  }
+}
+
+.gadget {
+  height: 350px;
+  padding-left: 20px;
+  background-color: white;
+  border: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid #dcdce0;
+  >.current-assignment {
+    margin-top: 45px;
+    >* {
+      float: left;
+      margin-right: 15px;
+    }
+    >.stat {
+      font-size: 20px;
+    }
+  }
+}
