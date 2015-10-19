@@ -31,3 +31,10 @@ color:green */
 .taskheader{
   text-decoration: underline;
 }
+.special-word {
+  border-bottom: 1px dashed #999;
+  &:hover {
+    border-bottom: none;
+
+  }
+}

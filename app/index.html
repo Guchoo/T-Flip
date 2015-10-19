@@ -1,308 +1,304 @@
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>T-Flip</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T-Flip</title>
 
-    <link rel="stylesheet" href="styles/master.css">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="styles/master.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <li class="active"><a href="#">Current Assignment</a></li>
-        <li><a href="#">Achievements</a></li>
-      </ul>
-      <h4 class="text-muted">T-FLIP</h4>
-    </div> -->
-    <div class="top">
-      <div class="topbar-link tflip">
-        <a href="index.html">T-Flip</a>
-      </div>
-      <div class="topbar-link assign">
-        <a href="assignment.html">Current Assignment</a>
-      </div>
-      <div class="topbar-link achive">
-        <a href="achievements.html">Achievements</a>
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+  <!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!-- <div class="header">
+  <ul class="nav nav-pills pull-right">
+  <li class="active"><a href="#">Current Assignment</a></li>
+  <li><a href="#">Achievements</a></li>
+</ul>
+<h4 class="text-muted">T-FLIP</h4>
+</div> -->
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">T-FLIP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="assignment.html">Current Assignment</a></li>
+      <li><a href="">Achievements</a></li>
+    </ul>
+    <div class="navbar-right">
+      <p class="navbar-text ">Signed in as Ola Normann</p>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <section class="gadget-section">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="gadget">
+          <h3>Last incompleted assignment<br>
+            <span class="subtitle"><a href="assignment.html">Assignment 5</a></span>
+          </h3>
+          <section class="current-assignment-body">
+            <canvas id="assignmentProgressChart" width="220" height="220"></canvas>
+
+            <!-- <svg class="pie-chart" viewBox="0 0 32 32">
+            <circle class="pie-circle" r="16" cx="16" cy="16" />
+          </svg> -->
+          <div class="stat-text">
+            <span class="text-emph">70%</span> completed (80% required) <br>
+            <span class="text-emph">21/30</span> tests passed
+          </div>
+        </section>
       </div>
     </div>
+    <div class="col-sm-7">
 
-    <div class="container-fluid">
-      <section class="gadget-section">
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="gadget">
-              <h3>Last incompleted assignment<br>
-                <span class="subtitle"><a href="assignment.html">Assignment 4</a></span>
-              </h3>
-              <section class="current-assignment-body">
-                <canvas id="assignmentProgressChart" width="220" height="220"></canvas>
+      <div class="gadget assignment-list">
+        <div class="assignment-list-body">
+          <h3 class="gadget-header">Assignments</h3>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#openAssignments" role="tab" data-toggle="tab">Active assignments</a></li>
+            <li role="presentation"><a href="#closedAssignments" role="tab" data-toggle="tab">Closed assignments</a></li>
+          </ul>
 
-                <!-- <svg class="pie-chart" viewBox="0 0 32 32">
-                  <circle class="pie-circle" r="16" cx="16" cy="16" />
-                </svg> -->
-                <div class="stat-text">
-                  <span class="text-emph">60%</span> completed (80% required) <br>
-                  <span class="text-emph">18/30</span> tests passed
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="openAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Assignment 6
+                  </a>
+                </h4>
+                <span class="assignment-status failed"><i class="fa fa-times"></i></span>
+                <span class="assignment-deadline"><span class="day-count-number">8</span> days left</span>
+              </div>
+              <div id="collapseOne" class="collapse" role="tabpanel">
+                <div class="list-item-body">
+                  Assignment 6
                 </div>
-              </section>
+              </div>
+
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Assignment 5
+                  </a>
+                </h4>
+                <span class="assignment-status failed"><i class="fa fa-times"></i></span>
+                <span class="assignment-deadline"><span class="day-count-number">1</span> day left</span>
+              </div>
+
+              <div id="collapseTwo" class="collapse" role="tabpanel">
+                <div class="collapsed-indicator"></div>
+                <div class="list-item-body">
+                  <div class="row assignment-detail-row">
+                    <div class="col-sm-5 field-title">
+                      Tests passed:
+                    </div>
+                    21/30
+                  </div>
+                  <div class="row assignment-detail-row">
+                    <div class="col-sm-5 field-title">
+                      Minimum requirements:
+                    </div>
+                    24/30
+                  </div>
+                  <div class="row assignment-detail-row">
+                    <div class="col-sm-5 field-title">
+                      Last build:
+                    </div>
+                    10 minutes ago
+                  </div>
+                  <br>
+                  <a href="assignment.html">See details</a>
+                </div>
+              </div>
+
             </div>
-          </div>
-          <div class="col-sm-7">
 
-            <div class="gadget assignment-list">
-              <div class="assignment-list-body">
-
-                <h3 class="gadget-header">Assignments</h3>
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#openAssignments" role="tab" data-toggle="tab">Active assignments</a></li>
-                  <li role="presentation"><a href="#closedAssignments" role="tab" data-toggle="tab">Closed assignments</a></li>
-                </ul>
-
-                <!-- <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="openAssignments">aa</div>
-                  <div role="tabpanel" class="tab-pane" id="closedAssignments">bb</div>
-                </div> -->
-                <div class="tab-content">
-
-
-
-                <div role="tabpanel" class="tab-pane active" id="openAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Assignment 6
-                      </a>
-                    </h4>
-                    <span class="assignment-status failed"><i class="fa fa-times"></i></span>
-                    <span class="assignment-deadline"><span class="day-count-number">15</span> days left</span>
-                  </div>
-                  <div id="collapseOne" class="collapse" role="tabpanel">
-                    <div class="list-item-body">
-                      Assignment 6
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Assignment 5
-                      </a>
-                    </h4>
-                    <span class="assignment-status failed"><i class="fa fa-times"></i></span>
-                    <span class="assignment-deadline"><span class="day-count-number">8</span> days left</span>
-                  </div>
-
-                  <div id="collapseTwo" class="collapse" role="tabpanel">
-                    <div class="collapsed-indicator"></div>
-                    <div class="list-item-body">
-                      <div class="row assignment-detail-row">
-                        <div class="col-sm-5 field-title">
-                          Tests passed:
-                        </div>
-                        18/30
-                      </div>
-                      <div class="row assignment-detail-row">
-                        <div class="col-sm-5 field-title">
-                          Minimum requirements:
-                        </div>
-                        20/30
-                      </div>
-                      <div class="row assignment-detail-row">
-                        <div class="col-sm-5 field-title">
-                          Last build:
-                        </div>
-                        10 minutes ago
-                      </div>
-                      <br>
-                      <a href="#">See details</a>
-                    </div>
-                  </div>
-
+            <div role="tabpanel" class="tab-pane" id="closedAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Assignment 4
+                  </a>
+                </h4>
+                <span class="assignment-status failed"><i class="fa fa-times"></i></span>
+                <span class="assignment-deadline expired"></span>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                <div class="list-item-body">
+                  Assignment 4
                 </div>
+              </div>
 
-                <div role="tabpanel" class="tab-pane" id="closedAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Assignment 4
-                      </a>
-                    </h4>
-                    <span class="assignment-status failed"><i class="fa fa-times"></i></span>
-                    <span class="assignment-deadline expired"></span>
-                  </div>
-                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
-                    <div class="list-item-body">
-                      Assignment 4
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Assignment 3
-                      </a>
-                    </h4>
-                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
-                    <span class="assignment-deadline expired"></span>
-                  </div>
-                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
-                    <div class="list-item-body">
-                      Assignment 3
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                        Assignment 2
-                      </a>
-                    </h4>
-                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
-                    <span class="assignment-deadline expired"></span>
-                  </div>
-                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
-                    <div class="list-item-body">
-                      Assignment 2
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <h4 class="list-item-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                        Assignment 1
-                      </a>
-                    </h4>
-                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
-                    <span class="assignment-deadline expired"></span>
-                  </div>
-                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel">
-                    <div class="list-item-body">
-                      Assignment 1
-                    </div>
-                  </div>
-
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Assignment 3
+                  </a>
+                </h4>
+                <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                <span class="assignment-deadline expired"></span>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                <div class="list-item-body">
+                  Assignment 3
                 </div>
-                </div>
+              </div>
 
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    Assignment 2
+                  </a>
+                </h4>
+                <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                <span class="assignment-deadline expired"></span>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+                <div class="list-item-body">
+                  Assignment 2
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <h4 class="list-item-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    Assignment 1
+                  </a>
+                </h4>
+                <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                <span class="assignment-deadline expired"></span>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel">
+                <div class="list-item-body">
+                  Assignment 1
+                </div>
               </div>
 
             </div>
           </div>
+
         </div>
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="gadget-scroll gadget">
-              <h3>Achievements</h3>
-              <div class="trophy-gadget">
-                <table class="trophy-gadget-content">
-                  <tr>
-                    <td>
-                      <img src="image/silver.png" height="50%" width="50%">
-                    </td>
-                    <td>
-                      <h3 class="trophy-header">Earlybird</h3>
-                      <h4>Delivered assignment between 5-8 am.</h4>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-                <div class="trophy-gadget">
-                <table class="trophy-gadget-content">
-                  <tr>
-                    <td>
-                      <img src="image/bronze.png" height="50%" width="50%">
-                    </td>
-                    <td>
-                      <h3 class="trophy-header">Super-Commiter</h3>
-                      <h4>Three commits on one assignment.</h4>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="trophy-gadget">
-                <table class="trophy-gadget-content">
-                  <tr>
-                    <td>
-                      <img src="image/gold.png" height="50%" width="50%">
-                    </td>
-                    <td>
-                      <h3 class="trophy-header">Best in Class</h3>
-                      <h4>Get best score on an assignment</h4>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-7">
-            <div class="gadget">
-              <h3>Assignment results</h3>
-              <div class="assignment-results-body">
-                <canvas id="classStatsChart" width="500" height="280"></canvas>
-                <div class="assignment-results-facts">
-                  You are among the top <br><span class="number-emphasized">25%</span> students in your class
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
+      </div>
     </div>
+  </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="gadget-scroll gadget">
+        <h3>Achievements</h3>
+        <div class="trophy-gadget">
+          <table class="trophy-gadget-content">
+            <tr>
+              <td>
+                <img src="image/silver.png" height="50%" width="50%">
+              </td>
+              <td>
+                <h3 class="trophy-header">Earlybird</h3>
+                <h4>Delivered assignment between 5-8 am.</h4>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="trophy-gadget">
+          <table class="trophy-gadget-content">
+            <tr>
+              <td>
+                <img src="image/bronze.png" height="50%" width="50%">
+              </td>
+              <td>
+                <h3 class="trophy-header">Super-Commiter</h3>
+                <h4>Three commits on one assignment.</h4>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="trophy-gadget">
+          <table class="trophy-gadget-content">
+            <tr>
+              <td>
+                <img src="image/gold.png" height="50%" width="50%">
+              </td>
+              <td>
+                <h3 class="trophy-header">Best in Class</h3>
+                <h4>Get best score on an assignment</h4>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <div class="gadget">
+        <h3>Assignment results</h3>
+        <div class="assignment-results-body">
+          <canvas id="classStatsChart" width="500" height="280"></canvas>
+          <div class="assignment-results-facts">
+            You are among the top <br><span class="number-emphasized">25%</span> students in your class
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/Chart.js/Chart.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+</div>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/Chart.js/Chart.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
 </html>
