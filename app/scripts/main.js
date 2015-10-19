@@ -9,7 +9,7 @@ var data = {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [92, 95, 100, 70, 65]
+            data: [92, 95, 100, 70, 60]
         },
         {
             label: "Class mean",
@@ -44,12 +44,12 @@ var myLineChart = new Chart(ctx).Line(data, options);
 
 var data = [
     {
-        value: 18,
+        value: 21,
         color: userColor,
         highlight: "rgb(96, 179, 99)"
     },
     {
-        value: 12,
+        value: 9,
         color: "#EEE",
         highlight: "#EEE"
     }
