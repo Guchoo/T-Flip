@@ -34,7 +34,8 @@ var data = {
 var options = {
   bezierCurve: false,
   datasetFill: false,
-  animationSteps: 40
+  animationSteps: 40,
+  multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
 };
 
 // Get the context of the canvas element we want to select
@@ -55,7 +56,8 @@ var data = [
     }
 ]
 options = {
-  animation: false
+  animation: false,
+  multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
 };
 ctx = document.getElementById("assignmentProgressChart").getContext("2d");
 // For a pie chart
