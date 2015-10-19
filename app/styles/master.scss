@@ -1,0 +1,33 @@
+@import "/styles/common.css";
+
+.top{
+  background-color: #337ab7;
+  padding: 40px 15px;
+}
+
+.tflip{
+  font-size: 40;
+}
+
+.assign{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.achive{
+  margin-right: 60px;
+}
+
+.tflip,.assign,.achive{
+  float: left;
+}
+
+.topbar-link > a {
+  text-decoration: none;
+  font-size: 30;
+  color: black;
+}
+
+.topbar-link > a:hover{
+  color:black;
+}
