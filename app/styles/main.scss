@@ -13,12 +13,6 @@ $icon-font-path: '../fonts/';
   margin: 30px 0;
 }
 
-
-.text-emph {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .pie-chart {
   width: 200px; height: 200px;
   transform: rotate(-90deg);
@@ -31,4 +25,134 @@ $icon-font-path: '../fonts/';
   fill: #655;
   stroke-width: 32;
   stroke-dasharray: 60 100; /* for 38% */
+}
+.collapsed-indicator {
+  float: left;
+  position: relative;
+  top: -1px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+.assignment-list {
+  padding: 0;
+  overflow: scroll;
+  .gadget-header {
+    margin-left: $body-padding;
+  }
+}
+.assignments {
+  padding: 0;
+  >li {
+    list-style-type: none;
+    display: block;
+    border-top: 1px solid rgb(230, 230, 230);
+    padding: 10px $body-padding;
+  }
+}
+
+.list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group-item:last-child {
+  border-radius: 0;
+}
+
+.list-group-item {
+  border-left: 0;
+  border-right: 0;
+  overflow: auto;
+  height:53px;
+  line-height: 30px;
+  &:first-child {
+    border-top: none;
+  }
+}
+.list-item-title {
+  >a {
+    color: inherit;
+  }
+  float: left;
+  width: 75%;
+  margin-top: 7px;
+  margin-bottom: 0;
+  display: inline;
+  font-size: 18px;
+  color: inherit;
+}
+.assignment-status {
+  width: 40px;
+  float: left;
+  font-size: 1.5em;
+  &.failed {
+    color: #d9534f;
+  }
+  &.passed {
+    color: #5cb85c;
+  }
+  >*{
+    margin: 0 auto;
+  }
+}
+.assignment-deadline.expired {
+  font-style: italic;
+  &:after {
+    content: "Closed";
+  }
+}
+.day-count-number {
+  background-color: #8a8a8a;
+  color: white;
+  padding: 2px 6px 2px 7px;
+  border-radius: 4px;
+  font-size: 1.5em;
+}
+
+
+.list-item-body {
+  padding: $body-padding;
+  border-top: 1px solid rgb(230, 230, 230);
+  background-color: #eee
+}
+
+.nav-tabs > li:first-child {
+  > a {
+    border-radius: 0px 4px 0 0;
+  }
+  &.active > a {
+    border-left: none;
+    border-top-left-radius: none;
+    &.hover {
+      border-left: none;
+    }
+  }
+}
+
+.field-title {
+  font-weight: bold;
+}
+
+.assignment-detail-row {
+  line-height: 2;
+}
+
+#classStatsChart {
+  width: 500px;
+}
+
+.assignment-results-body {
+  >* {
+    float: left;
+  }
+}
+.assignment-results-facts {
+  margin-left: 15px;
+  font-size: 2em;
+}
+.number-emphasized {
+  font-size: 1.7em;
+  font-weight: bold;
 }
