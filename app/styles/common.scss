@@ -25,7 +25,7 @@ body {
 }
 
 .gadget {
-  height: 350px;
+  height: 370px;
   padding-left: 20px;
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
@@ -88,8 +88,12 @@ body {
   margin-bottom: 0;
 }
 
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+  color: #e4e4e4;
+}
+
 .trophy-gadget{
-  height: 100px;
+  height: 90px;
   padding-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
@@ -107,9 +111,6 @@ body {
   float: left;
 }
 
-.trophy-gadget-content{
-  margin: 5px;
-}
 .gadget-scroll{
   overflow: scroll;
 }
