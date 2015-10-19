@@ -76,7 +76,7 @@ $icon-font-path: '../fonts/';
     color: inherit;
   }
   float: left;
-  width: 70%;
+  width: 75%;
   margin-top: 7px;
   margin-bottom: 0;
   display: inline;
@@ -84,14 +84,14 @@ $icon-font-path: '../fonts/';
   color: inherit;
 }
 .assignment-status {
-  width: 10%;
+  width: 40px;
   float: left;
   font-size: 1.5em;
   &.failed {
-    color: red;
+    color: #d9534f;
   }
   &.passed {
-    color: green;
+    color: #5cb85c;
   }
   >*{
     margin: 0 auto;
@@ -100,7 +100,7 @@ $icon-font-path: '../fonts/';
 .assignment-deadline.expired {
   font-style: italic;
   &:after {
-    content: "Expired";
+    content: "Closed";
   }
 }
 .day-count-number {
@@ -137,4 +137,22 @@ $icon-font-path: '../fonts/';
 
 .assignment-detail-row {
   line-height: 2;
+}
+
+#classStatsChart {
+  width: 500px;
+}
+
+.assignment-results-body {
+  >* {
+    float: left;
+  }
+}
+.assignment-results-facts {
+  margin-left: 15px;
+  font-size: 2em;
+}
+.number-emphasized {
+  font-size: 1.7em;
+  font-weight: bold;
 }

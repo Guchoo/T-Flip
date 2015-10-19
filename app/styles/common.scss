@@ -32,7 +32,7 @@ body {
   border-bottom: 1px solid #dcdce0;
 
   .current-assignment-body {
-    margin-top: 45px;
+    margin-top: 15px;
     >.pie-chart {
       float: left;
       margin-right: 15px;
@@ -44,4 +44,42 @@ body {
       float: left;
     }
   }
+}
+
+.subtitle {
+  line-height: 1.7;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.top{
+  background-color: #337ab7;
+  padding: 40px 15px;
+}
+
+.tflip{
+  font-size: 40;
+}
+
+.assign{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.achive{
+  margin-right: 60px;
+}
+
+.tflip,.assign,.achive{
+  float: left;
+}
+
+.topbar-link > a {
+  text-decoration: none;
+  font-size: 30;
+  color: black;
+}
+
+.topbar-link > a:hover{
+  color:black;
 }
