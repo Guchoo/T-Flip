@@ -1,21 +1,25 @@
 <html>
   <head>
-    <title>Achievements</title>
-    <link rel="stylesheet" href="styles/master.css">
+    <title>T-Flip - Achievements</title>
+    <!-- build:css styles/achievements.css -->
     <link rel="stylesheet" href="styles/achievements.css">
+    <!-- endbuild -->
   </head>
   <body>
-    <div class="top">
-      <div class="topbar-link tflip">
-        <a href="index.html">T-Flip</a>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">T-FLIP</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="assignment.html">Current Assignment</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+        <div class="navbar-right">
+          <p class="navbar-text ">Signed in as Ola Normann</p>
+        </div>
       </div>
-      <div class="topbar-link assign">
-        <a href="assignment.html">Current Assignment</a>
-      </div>
-      <div class="topbar-link achive">
-        <a href="achievements.html">Achievements</a>
-      </div>
-    </div>
+    </nav>
 <!---Page begins--->
 <div class="title">
     <h1>Achievements</h1>
@@ -247,6 +251,8 @@
     <script src="/bower_components/Chart.js/src/Chart.Core.js"></script>
     <script src="/bower_components/Chart.js/src/Chart.Bar.js"></script>
 
+    <!-- build:js scripts/achievements.js -->
     <script src="scripts/achievements.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
