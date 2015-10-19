@@ -1,8 +1,20 @@
 /* Space out content a bit */
+$body-padding: 15px;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
 body {
   background-color: #F4F4F6;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.text-emph {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .gadget-section {
@@ -18,14 +30,18 @@ body {
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid #dcdce0;
-  >.current-assignment {
+
+  .current-assignment-body {
     margin-top: 45px;
-    >* {
+    >.pie-chart {
       float: left;
       margin-right: 15px;
     }
-    >.stat {
+    .stat-text {
       font-size: 20px;
+      height: 200px;
+      line-height: 100px;
+      float: left;
     }
   }
 }

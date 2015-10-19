@@ -31,7 +31,7 @@
         <li class="active"><a href="#">Current Assignment</a></li>
         <li><a href="#">Achievements</a></li>
       </ul>
-      <h3 class="text-muted">T-FLIP</h3>
+      <h4 class="text-muted">T-FLIP</h4>
     </div> -->
 
 
@@ -40,8 +40,8 @@
         <div class="row">
           <div class="col-sm-7">
             <div class="gadget">
-              <h3>Current assignment(assignment 5)</h3>
-              <section class="current-assignment">
+              <h3>Last incompleted assignment(assignment 4)</h3>
+              <section class="current-assignment-body">
                 <svg class="pie-chart" viewBox="0 0 32 32">
                   <circle class="pie-circle" r="16" cx="16" cy="16" />
                 </svg>
@@ -53,8 +53,130 @@
             </div>
           </div>
           <div class="col-sm-5">
-            <div class="gadget">
-              <h3>Assignments</h3>
+
+            <div class="gadget assignment-list">
+              <div class="assignment-list-body">
+
+                <h3 class="gadget-header">Assignments</h3>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#openAssignments" role="tab" data-toggle="tab">Open assignments</a></li>
+                  <li role="presentation"><a href="#closedAssignments" role="tab" data-toggle="tab">Closed assignments</a></li>
+                </ul>
+
+                <!-- <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="openAssignments">aa</div>
+                  <div role="tabpanel" class="tab-pane" id="closedAssignments">bb</div>
+                </div> -->
+                <div class="tab-content">
+
+
+
+                <div role="tabpanel" class="tab-pane active" id="openAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
+                  <div class="list-group-item">
+                    <h4 class="list-item-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Assignment 5
+                      </a>
+                    </h4>
+                    <span class="assignment-status failed"><i class="fa fa-times"></i></span>
+                    <span class="assignment-deadline"><span class="day-count-number">15</span> days left</span>
+                  </div>
+                  <div id="collapseOne" class="collapse" role="tabpanel">
+                    <div class="list-item-body">
+                      Assignment 5
+                    </div>
+                  </div>
+
+                  <div class="list-group-item">
+                    <h4 class="list-item-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Assignment 4
+                      </a>
+                    </h4>
+                    <span class="assignment-status failed"><i class="fa fa-times"></i></span>
+                    <span class="assignment-deadline"><span class="day-count-number">8</span> days left</span>
+                  </div>
+
+                  <div id="collapseTwo" class="collapse" role="tabpanel">
+                    <div class="collapsed-indicator"></div>
+                    <div class="list-item-body">
+                      <div class="row assignment-detail-row">
+                        <div class="col-sm-5 field-title">
+                          Tests passed:
+                        </div>
+                        18/30
+                      </div>
+                      <div class="row assignment-detail-row">
+                        <div class="col-sm-5 field-title">
+                          Minimum requirements:
+                        </div>
+                        20/30
+                      </div>
+                      <div class="row assignment-detail-row">
+                        <div class="col-sm-5 field-title">
+                          Last build:
+                        </div>
+                        10 minutes ago
+                      </div>
+                      <br>
+                      <a href="">See details</a>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item">
+                    <h4 class="list-item-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Assignment 3
+                      </a>
+                    </h4>
+                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                    <span class="assignment-deadline"><span class="day-count-number">1</span> day left</span>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                    <div class="list-item-body">
+                      Assignment 3
+                    </div>
+                  </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="closedAssignments" class="list-group" id="accordion" role="tablist" aria-multiselectable="false">
+
+                  <div class="list-group-item">
+                    <h4 class="list-item-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Assignment 2
+                      </a>
+                    </h4>
+                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                    <span class="assignment-deadline expired"></span>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+                    <div class="list-item-body">
+                      Assignment 2
+                    </div>
+                  </div>
+
+                  <div class="list-group-item">
+                    <h4 class="list-item-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        Assignment 1
+                      </a>
+                    </h4>
+                    <span class="assignment-status passed"><i class="fa fa-check"></i></span>
+                    <span class="assignment-deadline expired"></span>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel">
+                    <div class="list-item-body">
+                      Assignment 1
+                    </div>
+                  </div>
+
+                </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -106,7 +228,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
     <!-- endbuild -->
   </body>
 </html>
