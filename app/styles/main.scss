@@ -64,7 +64,7 @@ $icon-font-path: '../fonts/';
 .list-group-item {
   border-left: 0;
   border-right: 0;
-  overflow: auto;
+  //overflow: auto;
   height:53px;
   line-height: 30px;
   &:first-child {
