@@ -132,8 +132,18 @@
                 <td>
                   <ul>
                     <li>
-                      <p> Variable names should
-                        <a  class="special-word" href="javascript:camelcase();">camelcase</a>.
+                      <p> Variable names should be
+                        <a class="special-word" role="button" href="#" data-toggle="popover"
+                        title="CamelCase" data-trigger="focus" data-placement="top"
+                        data-content="Some content inside the popover
+                            is the practice of writing compound words or phrases such that each
+                             word or abbreviation begins with a capital letter. Camel case may
+                             start with a capital or, especially in programming languages,
+                             with a lowercase letter. Common examples are LibreOffice, PowerPoint,
+                              iPhone or in online usernames such as UserName.<br>
+                              <a href='https://en.wikipedia.org/wiki/CamelCase'
+                              title='Read more'>Read more</a>"
+                              data-original-title="camelcase">camelcase</a>
                       </p>
                     </li>
                   </ul>
@@ -158,6 +168,13 @@
 
   <!-- build:js scripts/helpboxes.js -->
   <script src="scripts/helpboxes.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- endbuild -->
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({html:true});
+  });
+  </script>
 </body>
 </html>
