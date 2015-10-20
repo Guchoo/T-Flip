@@ -30,22 +30,6 @@ body {
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid #dcdce0;
-
-  .current-assignment-body {
-    margin-top: 15px;
-    >.pie-chart {
-      float: left;
-      margin-right: 15px;
-    }
-    .stat-text {
-      font-size: 20px;
-      height: 200px;
-      line-height: 1.4;
-      max-width: 170px;
-      margin-top: 25px;
-      float: left;
-    }
-  }
 }
 
 .subtitle {
