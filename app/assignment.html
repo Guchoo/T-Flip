@@ -136,8 +136,23 @@
                 <td>
                   <ul>
                     <li>
-                      <p> Variable names should
-                        <a  class="special-word" href="javascript:camelcase();">camelcase</a>.
+                      <p>
+                        Variable names should be lower
+                        <div class="helpbox">
+                          <a href="#" class="special-word" title="camelCase">camelCase</a>
+                          <div class="helpbox-content">
+                            <h4>CamelCase</h2>
+                            <p><span style="font-style:italic">CamelCase</span> is the practice of writing compound words or phrases such that each
+                                 word or abbreviation begins with a capital letter. Camel case may
+                                 start with a capital or, especially in programming languages,
+                                 with a lowercase letter. Common examples are LibreOffice, PowerPoint,
+                                iPhone or in online usernames such as UserName.
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/CamelCase">Read more</a>
+                          </div>
+                        </div>
+
+                        <!-- <a  class="special-word" href="javascript:camelcase();">camelcase</a>. -->
                       </p>
                     </li>
                   </ul>
@@ -160,8 +175,12 @@
   <!-- endbower -->
   <!-- endbuild -->
 
-  <!-- build:js scripts/helpboxes.js -->
-  <script src="scripts/helpboxes.js"></script>
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/assignment.js -->
+  <script src="scripts/assignment.js"></script>
   <!-- endbuild -->
 </body>
 </html>
