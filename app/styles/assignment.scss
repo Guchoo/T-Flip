@@ -38,3 +38,15 @@ color:green */
 
   }
 }
+.passed {
+    background-color: #5cb85c;
+    color: #fefefe;
+ }
+.faild {
+  background-color: #d9534f;
+  color: #fefefe;
+}
+
+.hidden-btn{
+  opacity: 0;
+}
