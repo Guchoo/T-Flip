@@ -40,7 +40,9 @@ body {
     .stat-text {
       font-size: 20px;
       height: 200px;
-      line-height: 100px;
+      line-height: 1.4;
+      max-width: 170px;
+      margin-top: 25px;
       float: left;
     }
   }
