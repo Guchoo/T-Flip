@@ -113,7 +113,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
-gulp.task('serve:dist', ['build-no-lint'], () => {
+gulp.task('serve:dist', ['build'], () => {
   browserSync({
     notify: false,
     port: 9001,
@@ -165,5 +165,5 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
 
 
 gulp.task('default', ['clean'], () => {
-  gulp.start('build-no-lint');
+  gulp.start('build');
 });

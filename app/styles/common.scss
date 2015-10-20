@@ -12,6 +12,58 @@ body {
   padding-bottom: 20px;
 }
 
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+select {
+  // margin: $body-padding;
+  border: 1px solid #111;
+  background: transparent;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../images/icon-caret-outline-down-white.svg') 96% / 15% no-repeat #eee;
+
+  background-color: white;
+  border-radius: 1px;
+  height: 48px;
+  width: 200px;
+  padding-left: 15px;
+}
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+
+@media screen and (min-width: 0\0) {
+  select {
+    background: none;
+    padding: 5px;
+  }
+}
+
+// .assignlist select {
+//   font: 400 60px/1.5em sans-serif;
+//   margin-top: 10px;
+//   margin-left: 16px;
+//   margin-bottom: 10px;
+//   float:left;
+//   clear:both;
+// }
+//
+// .assignlist option{
+//   font: 400 30px/1.5em sans-serif;
+// }
+
 .text-emph {
   font-size: 1.5em;
   font-weight: bold;

@@ -1,18 +1,5 @@
 @import "common.scss";
 
-.asignlist select {
-  font: 400 60px/1.5em sans-serif;
-  margin-top: 10px;
-  margin-left: 16px;
-  margin-bottom: 10px;
-  float:left;
-  clear:both;
-}
-
-.asignlist option{
-  font: 400 30px/1.5em sans-serif;
-}
-
 .statuslist {
   margin-top: 5%;
   margin-left: 10%;
@@ -37,4 +24,10 @@ color:green */
     border-bottom: none;
 
   }
+}
+
+.assignment-select {
+  margin: $body-padding $body-padding 6px;
+  width: 300px;
+  font-size: 23px;
 }
