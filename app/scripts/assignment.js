@@ -17,3 +17,8 @@ function camelcase() {
   TheNewWin.resizeTo(NewWinHeight, NewWinWidth);
   TheNewWin.moveTo(NewWinPutX, NewWinPutY);
 }
+
+
+$(function () {
+    $('[data-toggle="popover"]').popover({html:true});
+})

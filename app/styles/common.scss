@@ -30,20 +30,6 @@ body {
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid #dcdce0;
-
-  .current-assignment-body {
-    margin-top: 15px;
-    >.pie-chart {
-      float: left;
-      margin-right: 15px;
-    }
-    .stat-text {
-      font-size: 20px;
-      height: 200px;
-      line-height: 100px;
-      float: left;
-    }
-  }
 }
 
 .subtitle {
@@ -108,4 +94,26 @@ body {
 
 .gadget-scroll{
   overflow: scroll;
+}
+
+.helpbox {
+  display: inline-block;
+  position: relative;
+}
+.helpbox:hover .helpbox-content {
+  opacity: 1;
+}
+.helpbox-content {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  height: 212px;
+  width: 220px;
+  font-size: .7em;
+  opacity: 0;
+  position: absolute;
+  top: -220px;
+  left: -26px;
+  transition: opacity .2s linear;
 }
