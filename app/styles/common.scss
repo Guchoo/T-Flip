@@ -125,6 +125,7 @@ select {
 .trophy-gadget.notification {
   padding-right: 20px;
   margin-right: 0;
+  background-color: white;
 }
 .notification-header{
   margin-top: 0;
@@ -166,4 +167,11 @@ select {
 }
 .responce{
   font-size: 20;
+}
+
+.notification-achievement {
+  white-space: nowrap;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
 }
