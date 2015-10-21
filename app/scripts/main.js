@@ -9,7 +9,7 @@ var data = {
             pointStrokeColor: '#fff',
             pointHighlightFill: '#fff',
             pointHighlightStroke: 'rgba(151,187,205,1)',
-            data: [92, 95, 100, 70, 60]
+            data: [92, 95, 100, 75, 70]
         },
         {
             label: 'Class mean',
@@ -18,7 +18,7 @@ var data = {
             pointStrokeColor: '#fff',
             pointHighlightFill: '#fff',
             pointHighlightStroke: 'rgba(220,220,220,1)',
-            data: [90, 85, 82, 85, 70]
+            data: [90, 85, 82, 85, 75]
         },
         {
             label: 'Required score',
