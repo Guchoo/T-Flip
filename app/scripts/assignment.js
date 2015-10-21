@@ -20,7 +20,7 @@ function camelcase() {
 
 
 $(function () {
-    $.notify.addStyle('achivement', {
+    $.notify.addStyle('achievement', {
       html: "<div><h2 class='notification-header'><span data-notify-text/></h2><div class='trophy-gadget notification'><table class='trophy-gadget-content'><tr><td><img src='images/gold.png' height='50%' width='50%'></td><td><h3 class='trophy-header'>Visitor</h3><h4> Visit assignment page</h4></td></tr></table></div></div>",
       classes: {
         base: {
@@ -33,6 +33,6 @@ $(function () {
     });
     $('[data-toggle="popover"]').popover({html:true});
     $('#notification-trigger').click(function(){
-      $.notify('New Achievement!', {style: 'achivement'});
+      $.notify('New Achievement!', {style: 'achievement', autoHideDelay: 10000});
   });
 })

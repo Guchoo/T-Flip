@@ -56,6 +56,7 @@ data = [
 ];
 options = {
   animation: false,
+  showTooltips: false,
   multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
 };
 ctx = document.getElementById('assignmentProgressChart').getContext('2d');
