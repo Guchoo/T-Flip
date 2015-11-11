@@ -1,45 +1,45 @@
-@import "common.scss";
+@import 'common';
 
 .statuslist {
-  margin-top: 5%;
-  margin-left: 10%;
-  font-size: 30px;
   float: left;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-top: 5%;
   width: 30%;
 }
 
-.statuscolor{
-/*if failed*/
-  color: red;
-/*if passed
-color:green */
+.statuscolor {
+  color: #f00;
 }
 
-.taskheader{
+.taskheader {
   text-decoration: underline;
 }
+
 .special-word {
   border-bottom: 1px dashed #999;
-  &:hover {
-    border-bottom: none;
 
+  &:hover {
+    border-bottom: 0;
   }
 }
+
 .passed {
-    background-color: #5cb85c;
-    color: #fefefe;
+  background-color: #5cb85c;
+  color: #fefefe;
  }
+
 .faild {
   background-color: #d9534f;
   color: #fefefe;
 }
 
-.hidden-btn{
+.hidden-btn {
   opacity: 0;
 }
 
 .assignment-select {
+  font-size: 23px;
   margin: $body-padding $body-padding 6px;
   width: 300px;
-  font-size: 23px;
 }
